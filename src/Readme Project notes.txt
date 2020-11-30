@@ -15,3 +15,11 @@ Moment -> For Date
 Google Font -> Select onr then copy to css file.
 Material-UI -> npm 
 
+
+All done redo video from 1:03:06 to
+
+(Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass)y
+* Firebase login
+* Firebase init
+* npm run build
+* Firebase deploy -- from build file created from previous step
