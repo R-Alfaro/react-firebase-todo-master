@@ -47,7 +47,6 @@ function App() {
       <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",width: "100%" }}>
         <h1>😃  TODO List for ({moment(Date()).format('MMMM Do YYYY')})  😃</h1>
         
-
         <form>
           <TextField id="standard-basic" label="Write a Todo" 
             value={todoInput} style={{ width: "90vw", maxWidth: "500px" }} 
@@ -56,11 +55,10 @@ function App() {
           <Button type="submit" variant="contained" onClick={addTodo} style={{ display: "none" }}>Add Todo</Button>
         </form>
 
-        <div style={{ width: "90vw", maxWidth: "500px", marginTop: "5px" }}>
+        <div style={{ width: "90vw", maxWidth: "500px", marginTop: "1px" }}>
           {todos.map((todo) => (
             <TodoListItem todo={todo.todo} inprogress={todo.inprogress} id={todo.id} />
           ))}
-          <hr></hr>
           <h6 style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",width: "100%" }}>by Ramiro Alfaro using Firebase </h6>       </div>
       </div>
     </div>
