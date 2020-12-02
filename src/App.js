@@ -50,8 +50,8 @@ function App() {
   return (
     <div className="App">
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%" }}>
-        <h1>😃 TODO LIST 😃</h1>
-        <h4>-{moment(Date()).format('MMMM Do YYYY')}-</h4>
+        <h1 style={{marginBottom:"0px", marginTop:"10px"}}>😃 TODO LIST 😃</h1>
+        <h4 style={{marginTop:"0px"}}>{moment(Date()).format('MMMM Do YYYY')}</h4>
         <form>
           <TextField id="standard-basic" label="Write a Todo"
             value={todoInput} style={{ width: "90vw", maxWidth: "450px" }}
